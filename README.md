@@ -26,6 +26,19 @@ Tessera starts from a few beliefs:
 
 See [docs/ideology.md](docs/ideology.md) for the longer project philosophy.
 
+## Documentation
+
+- [Problem](docs/problem.md): what Git/GitHub do not model well enough for agent-heavy work.
+- [Solution](docs/solution.md): the work-first model Tessera proposes.
+- [Ideology](docs/ideology.md): the beliefs that should constrain product and engineering choices.
+- [Primitives](docs/primitives.md): the core nouns in the system.
+- [Workflows](docs/workflows.md): concrete human, agent, security, and projection examples.
+- [MVP](docs/mvp.md): the first prototype scope and non-goals.
+- [Comparisons](docs/comparisons.md): how Tessera relates to Git, GitHub, jj, and monorepo systems.
+- [Security Model](docs/security-model.md): actors, policies, projections, and publication checks.
+- [Architecture](docs/architecture.md): early component boundaries for the prototype.
+- [Roadmap](docs/roadmap.md): staged path from docs to local prototype to hosted collaboration.
+
 ## Early Primitives
 
 - **Project**: the top-level source, policy, review, and publication boundary.
