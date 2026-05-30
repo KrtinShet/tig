@@ -14,6 +14,18 @@ Tessera explores a different model:
 - Publication is intentional; editing is not publishing.
 - Git export exists for compatibility, but does not define the internal model.
 
+## Ideology
+
+Tessera starts from a few beliefs:
+
+- Source control should protect unfinished work instead of forcing teams to hide it in private forks, local branches, or separate repositories.
+- Humans and agents should be able to work messily while the system preserves enough structure to review, compare, audit, and publish clean results.
+- Visibility should be policy-driven. "Open source" should mean a project has a public projection, not that every file and every in-flight fix is public forever.
+- Branches, worktrees, and commits should become compatibility concepts rather than the primary way users understand their work.
+- Filesystems and Git remotes should be interfaces over source state, not the only place source state can live.
+
+See [docs/ideology.md](docs/ideology.md) for the longer project philosophy.
+
 ## Early Primitives
 
 - **Project**: the top-level source, policy, review, and publication boundary.
@@ -38,4 +50,3 @@ This repository is a blank-slate research and implementation workspace. The firs
 5. Attach runs/check results to snapshots.
 6. Produce a review unit from a selected snapshot.
 7. Export the result to Git for compatibility.
-
