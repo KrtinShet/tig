@@ -1,5 +1,8 @@
 [package]
-name = "tig"
+# Crate name is `tig-vcs` because `tig` is already taken on crates.io; the
+# binary and library are still named `tig` (see [[bin]] and [lib] below), so
+# `cargo install tig-vcs` installs a `tig` command and `use tig::...` works.
+name = "tig-vcs"
 version = "0.1.0"
 edition = "2021"
 description = "A work-first version control substrate for humans and AI coding agents — a Git alternative built around workspaces, snapshots, runs, and review units."
@@ -9,6 +12,14 @@ homepage = "https://github.com/KrtinShet/tig"
 readme = "README.md"
 keywords = ["version-control", "vcs", "git-alternative", "ai-agents", "snapshots"]
 categories = ["command-line-utilities", "development-tools"]
+
+[lib]
+name = "tig"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tig"
+path = "src/main.rs"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }

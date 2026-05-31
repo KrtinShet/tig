@@ -49,15 +49,37 @@ This is an early but **functional** prototype (not a production VCS yet — see 
 
 Tig is a single self-contained Rust binary.
 
-### Option 1 — install straight from GitHub (recommended)
+### Homebrew (macOS / Linux)
+
+```bash
+brew install KrtinShet/tig/tig
+```
+
+> ⚠️ Use the fully-qualified `KrtinShet/tig/tig`. Plain `brew install tig` installs the **unrelated** `tig` ncurses Git browser from homebrew-core, not this project.
+
+Install the latest unreleased `main` instead:
+
+```bash
+brew install --HEAD KrtinShet/tig/tig
+```
+
+### Cargo (any platform)
+
+```bash
+cargo install tig-vcs
+```
+
+This installs a `tig` binary on your `PATH` (via `~/.cargo/bin`). Requires a [Rust toolchain](https://rustup.rs) (stable).
+
+> The crate is published as **`tig-vcs`** (the name `tig` was already taken on crates.io), but the installed command is still `tig`.
+
+Or install the latest `main` directly from Git:
 
 ```bash
 cargo install --git https://github.com/KrtinShet/tig
 ```
 
-This puts a `tig` binary on your `PATH` (via `~/.cargo/bin`).
-
-### Option 2 — build from source
+### Build from source
 
 ```bash
 git clone https://github.com/KrtinShet/tig
@@ -66,7 +88,7 @@ cargo build --release
 # binary at ./target/release/tig
 ```
 
-> Requires a [Rust toolchain](https://rustup.rs) (stable). `git` must be installed for the Git export/import bridge.
+> `git` must be installed for the Git export/import bridge.
 
 ---
 
@@ -152,7 +174,10 @@ Add Tig as a dependency:
 
 ```toml
 [dependencies]
-tig = { git = "https://github.com/KrtinShet/tig" }
+# Published on crates.io as `tig-vcs`; the library is imported as `tig`.
+tig-vcs = "0.1"
+# ...or track the latest main:
+# tig-vcs = { git = "https://github.com/KrtinShet/tig" }
 ```
 
 Then drive it in-process — ideal for embedding in a Rust-based agent or tool:
