@@ -1,6 +1,6 @@
 # MVP
 
-The first Tessera MVP should prove the workflow before attempting to replace GitHub.
+The first Tig MVP should prove the workflow before attempting to replace GitHub.
 
 The goal is a local-first prototype that demonstrates:
 
@@ -10,7 +10,7 @@ The goal is a local-first prototype that demonstrates:
 
 The MVP should include:
 
-- local Tessera project initialization
+- local Tig project initialization
 - content-addressed object storage
 - workspace creation from a base snapshot
 - file read/write/patch operations
@@ -25,12 +25,12 @@ The MVP should include:
 The exact command names can change, but the first prototype should feel like this:
 
 ```bash
-tessera init
-tessera workspace create fix-auth-timeout
-tessera write /src/auth.ts --from patch.diff
-tessera run "npm test auth"
-tessera review create --from latest-passing --target main
-tessera git export --review current
+tig init
+tig workspace create fix-auth-timeout
+tig write /src/auth.ts --from patch.diff
+tig run "npm test auth"
+tig review create --from latest-passing --target main
+tig git export --review current
 ```
 
 The CLI is not the only intended interface. It is the fastest way to validate the model locally.

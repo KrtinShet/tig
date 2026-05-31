@@ -1,6 +1,6 @@
 # Roadmap
 
-This roadmap is intentionally staged. Tessera should prove the local work model before trying to become a hosted collaboration platform.
+This roadmap is intentionally staged. Tig should prove the local work model before trying to become a hosted collaboration platform.
 
 ## Phase 0: Model And Documentation
 
@@ -18,7 +18,7 @@ Deliverables:
 
 Exit criteria:
 
-- a new contributor can explain why Tessera exists
+- a new contributor can explain why Tig exists
 - the first prototype scope is clear
 
 ## Phase 1: Local Prototype
@@ -27,7 +27,7 @@ Goal: prove workspace, snapshot, run, and review-unit flow locally.
 
 Deliverables:
 
-- `tessera init`
+- `tig init`
 - local object store
 - local metadata store
 - workspace creation
@@ -44,7 +44,7 @@ Exit criteria:
 
 ## Phase 2: Agent API
 
-Goal: let coding agents use Tessera without Git mechanics.
+Goal: let coding agents use Tig without Git mechanics.
 
 Deliverables:
 
@@ -62,11 +62,11 @@ Exit criteria:
 
 ## Phase 3: Git Import And Export
 
-Goal: make Tessera compatible with existing projects.
+Goal: make Tig compatible with existing projects.
 
 Deliverables:
 
-- import Git repository as Tessera project
+- import Git repository as Tig project
 - map Git tree to base snapshot
 - export review unit as Git commit
 - export patch file
@@ -74,7 +74,7 @@ Deliverables:
 
 Exit criteria:
 
-- Tessera can operate on a real Git project and return a normal Git-compatible result
+- Tig can operate on a real Git project and return a normal Git-compatible result
 
 ## Phase 4: Policy And Projections
 
@@ -126,7 +126,7 @@ Deliverables:
 
 Exit criteria:
 
-- a small team can use Tessera as the coordination layer for agent-assisted development
+- a small team can use Tig as the coordination layer for agent-assisted development
 
 ## Open Questions
 

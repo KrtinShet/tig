@@ -1,10 +1,10 @@
 # Solution
 
-Tessera replaces commit-first source control with work-first source control.
+Tig replaces commit-first source control with work-first source control.
 
 The core idea:
 
-> Humans and agents work in isolated workspaces. Tessera captures meaningful states automatically. Checks and evidence attach to exact snapshots. Clean review units are created from selected states. Publication happens intentionally through policy-controlled projections.
+> Humans and agents work in isolated workspaces. Tig captures meaningful states automatically. Checks and evidence attach to exact snapshots. Clean review units are created from selected states. Publication happens intentionally through policy-controlled projections.
 
 ## The New Flow
 
@@ -14,7 +14,7 @@ Traditional Git workflow:
 edit files -> stage -> commit -> branch -> push -> pull request -> merge
 ```
 
-Tessera workflow:
+Tig workflow:
 
 ```text
 create workspace -> edit freely -> snapshot automatically -> run checks -> select state -> create review unit -> publish projection
@@ -58,7 +58,7 @@ Users can later choose the latest passing snapshot, an earlier simpler snapshot,
 
 An attempt connects a goal, actor, workspace, snapshots, runs, and outcome.
 
-This lets Tessera compare several solutions to the same task:
+This lets Tig compare several solutions to the same task:
 
 ```text
 Goal: fix scheduler race
@@ -127,7 +127,7 @@ Policy is not only authorization. It is also publication safety.
 
 ## Git Compatibility
 
-Tessera should interoperate with Git:
+Tig should interoperate with Git:
 
 - import a Git repository
 - materialize a workspace as local files
@@ -139,7 +139,7 @@ But Git is a bridge, not the internal product model.
 
 ## Success Criteria
 
-Tessera is working if a human or agent can:
+Tig is working if a human or agent can:
 
 1. Start from an existing codebase.
 2. Create isolated work without branch/worktree management.

@@ -1,6 +1,6 @@
 # Workflows
 
-This document shows how humans and agents should experience Tessera.
+This document shows how humans and agents should experience Tig.
 
 ## Agent Fixes A Bug
 
@@ -10,17 +10,17 @@ Base: main@snapshot-100
 Actor: Codex
 ```
 
-1. Tessera creates a workspace.
+1. Tig creates a workspace.
 2. The agent reads relevant files through the API or local mount.
 3. The agent applies a patch.
-4. Tessera records a snapshot.
+4. Tig records a snapshot.
 5. The agent runs tests.
-6. Tessera records the run against the exact snapshot.
+6. Tig records the run against the exact snapshot.
 7. The agent edits again if needed.
-8. Tessera records another snapshot.
+8. Tig records another snapshot.
 9. The agent proposes a review unit from the latest passing snapshot.
 10. A human reviews and approves.
-11. Tessera publishes the selected result.
+11. Tig publishes the selected result.
 
 Example state:
 
@@ -40,7 +40,7 @@ Attempt: codex-fix-scheduler
 Goal: reduce API latency
 ```
 
-Tessera creates multiple attempts:
+Tig creates multiple attempts:
 
 ```text
 Attempt A: Claude
@@ -72,10 +72,10 @@ The selected attempt becomes a review unit. The others remain archived evidence.
 A human should not need to learn agent-specific workflow.
 
 ```text
-tessera workspace create billing-cleanup
+tig workspace create billing-cleanup
 ```
 
-The workspace can be mounted locally and opened in an editor. Tessera captures snapshots automatically while the human works.
+The workspace can be mounted locally and opened in an editor. Tig captures snapshots automatically while the human works.
 
 When ready:
 
@@ -147,5 +147,5 @@ s4: debug logging, tests pass but messy
 
 The review unit can be created from `s2` instead of the latest state.
 
-This is a key Tessera behavior: the system preserves messy work but lets review use the best selected state.
+This is a key Tig behavior: the system preserves messy work but lets review use the best selected state.
 

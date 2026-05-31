@@ -2,7 +2,7 @@
 
 Git is excellent at storing and exchanging source history. GitHub is excellent at making Git collaborative. The problem is that the modern software workflow has expanded beyond the primitives those systems expose to users.
 
-Tessera starts from the claim that the pain is not a collection of small UX problems. The deeper issue is that source control is still organized around commits, branches, repository-level visibility, and local filesystem operations.
+Tig starts from the claim that the pain is not a collection of small UX problems. The deeper issue is that source control is still organized around commits, branches, repository-level visibility, and local filesystem operations.
 
 ## Commits Force Premature History
 
@@ -77,7 +77,7 @@ This makes it difficult to answer a precise question:
 
 > Which exact source state passed which exact checks, and why did we choose it?
 
-Tessera treats evidence as part of the source-control model.
+Tig treats evidence as part of the source-control model.
 
 ## Filesystem And Shell Assumptions Limit Agents
 

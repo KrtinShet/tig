@@ -1,6 +1,6 @@
-# Tessera Ideology
+# Tig Ideology
 
-Tessera is an argument that source control should be rebuilt around work, visibility, and evidence rather than commits, branches, and repository-level publication.
+Tig is an argument that source control should be rebuilt around work, visibility, and evidence rather than commits, branches, and repository-level publication.
 
 Git is not the enemy. Git proved that content-addressed history, distributed source state, and cheap branching are powerful ideas. The problem is that modern software work now asks Git and GitHub to carry responsibilities they were not designed to model directly:
 
@@ -11,7 +11,7 @@ Git is not the enemy. Git proved that content-addressed history, distributed sou
 - API-native editing by tools that do not need a full local checkout
 - policy-controlled publication to different audiences
 
-Tessera should preserve the good parts of Git while changing the user-facing primitives.
+Tig should preserve the good parts of Git while changing the user-facing primitives.
 
 ## 1. Work Comes Before History
 
@@ -19,7 +19,7 @@ Developers do not experience work as a series of polished commits. They try thin
 
 Agents make this more obvious. A coding agent may create many intermediate states while solving one task. Those states are useful for recovery, comparison, and audit, but most of them are not meaningful history.
 
-Tessera should continuously capture work without forcing the actor to decide whether each state deserves to become a commit.
+Tig should continuously capture work without forcing the actor to decide whether each state deserves to become a commit.
 
 Implications:
 
@@ -32,7 +32,7 @@ Implications:
 
 Git workflows often blur editing, sharing, and publishing. Pushing a branch, opening a pull request, or working in a public repo can expose work before it is ready or safe.
 
-Tessera treats publication as a separate act.
+Tig treats publication as a separate act.
 
 A human or agent should be able to edit freely in a private workspace, accumulate evidence, request review, and then intentionally publish selected state to a selected audience.
 
@@ -47,7 +47,7 @@ Implications:
 
 Traditional hosting makes repository visibility too binary. A repo is public or private. A fork is public or private. This forces teams into awkward structures when they want part of a system to be open and part to remain private.
 
-Tessera should make open source a first-class projection:
+Tig should make open source a first-class projection:
 
 ```text
 Project: runtime-platform
@@ -91,7 +91,7 @@ Implications:
 
 Git worktrees expose a real need: people and agents want multiple live views of the same project. The problem is that Git worktrees still require users to manage filesystem state, branch state, and synchronization manually.
 
-Tessera workspaces should be cheap logical views over source state.
+Tig workspaces should be cheap logical views over source state.
 
 Implications:
 
@@ -104,7 +104,7 @@ Implications:
 
 Current workflows often separate source state from the evidence that justifies it. CI logs live somewhere else. Agent transcripts live somewhere else. Benchmarks live somewhere else. Review discussion lives somewhere else.
 
-Tessera should attach evidence directly to the source states it describes.
+Tig should attach evidence directly to the source states it describes.
 
 Implications:
 
@@ -115,7 +115,7 @@ Implications:
 
 ## 7. Compatibility Is A Bridge, Not A Cage
 
-Tessera should interoperate with Git because Git is everywhere. It should be able to import Git repositories, export Git commits, mirror to GitHub, and produce patches that existing tools understand.
+Tig should interoperate with Git because Git is everywhere. It should be able to import Git repositories, export Git commits, mirror to GitHub, and produce patches that existing tools understand.
 
 But Git compatibility should not decide the internal model.
 
@@ -128,7 +128,7 @@ Implications:
 
 ## 8. Policy Should Be Programmable And Visible
 
-Source control already enforces policy, but often indirectly: branch protections, CODEOWNERS, repo visibility, CI gates, and secret scanners. Tessera should make policy explicit.
+Source control already enforces policy, but often indirectly: branch protections, CODEOWNERS, repo visibility, CI gates, and secret scanners. Tig should make policy explicit.
 
 Examples:
 
@@ -150,7 +150,7 @@ Implications:
 
 ## 9. The Filesystem Is An Interface
 
-Humans need editors. Build tools need directories. Existing language ecosystems expect files. Tessera should support local mounted workspaces.
+Humans need editors. Build tools need directories. Existing language ecosystems expect files. Tig should support local mounted workspaces.
 
 But the local filesystem should not be the only way to interact with source state.
 
@@ -173,7 +173,7 @@ Most Git pain comes from forcing users to manually protect themselves:
 - decide what should be public
 - reconstruct why a change was made
 
-Tessera should make the safer path the default path.
+Tig should make the safer path the default path.
 
 Implications:
 
@@ -185,7 +185,7 @@ Implications:
 
 ## Product North Star
 
-The first version of Tessera should prove one thing:
+The first version of Tig should prove one thing:
 
 > A human or agent can create isolated work, let the system capture every meaningful state, select the best passing snapshot, and publish a clean reviewable result without manually managing commits, branches, stashes, or worktrees.
 

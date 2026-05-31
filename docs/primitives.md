@@ -1,6 +1,6 @@
-# Tessera Primitive Model
+# Tig Primitive Model
 
-Tessera is built around work rather than commits.
+Tig is built around work rather than commits.
 
 ## Project
 

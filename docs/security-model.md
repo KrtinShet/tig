@@ -1,6 +1,6 @@
 # Security And Visibility Model
 
-Tessera treats visibility as a first-class source-control concern.
+Tig treats visibility as a first-class source-control concern.
 
 The core rule:
 
@@ -89,7 +89,7 @@ Publishing updates a projection. Workspaces do not automatically appear in proje
 
 ## Publication Checks
 
-Before source state becomes visible, Tessera should check:
+Before source state becomes visible, Tig should check:
 
 - actor is allowed to publish
 - target projection allows the paths
@@ -129,7 +129,7 @@ When ready:
 
 ## Secret Handling
 
-Tessera should assume secret leaks are a publication-boundary problem, not just a scanner problem.
+Tig should assume secret leaks are a publication-boundary problem, not just a scanner problem.
 
 The system should:
 

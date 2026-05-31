@@ -1,10 +1,10 @@
-# Tessera
+# Tig
 
-Tessera is an experimental version-control substrate for humans and coding agents.
+Tig is an experimental version-control substrate for humans and coding agents.
 
 The starting thesis: Git is a powerful object database, but the everyday workflow around commits, branches, worktrees, public repos, and pull requests is not the right primitive for agent-heavy software development.
 
-Tessera explores a different model:
+Tig explores a different model:
 
 - Work is continuously captured as changes and snapshots.
 - Workspaces are cheap editable views, not fragile branch/worktree rituals.
@@ -16,7 +16,7 @@ Tessera explores a different model:
 
 ## Ideology
 
-Tessera starts from a few beliefs:
+Tig starts from a few beliefs:
 
 - Source control should protect unfinished work instead of forcing teams to hide it in private forks, local branches, or separate repositories.
 - Humans and agents should be able to work messily while the system preserves enough structure to review, compare, audit, and publish clean results.
@@ -29,12 +29,12 @@ See [docs/ideology.md](docs/ideology.md) for the longer project philosophy.
 ## Documentation
 
 - [Problem](docs/problem.md): what Git/GitHub do not model well enough for agent-heavy work.
-- [Solution](docs/solution.md): the work-first model Tessera proposes.
+- [Solution](docs/solution.md): the work-first model Tig proposes.
 - [Ideology](docs/ideology.md): the beliefs that should constrain product and engineering choices.
 - [Primitives](docs/primitives.md): the core nouns in the system.
 - [Workflows](docs/workflows.md): concrete human, agent, security, and projection examples.
 - [MVP](docs/mvp.md): the first prototype scope and non-goals.
-- [Comparisons](docs/comparisons.md): how Tessera relates to Git, GitHub, jj, and monorepo systems.
+- [Comparisons](docs/comparisons.md): how Tig relates to Git, GitHub, jj, and monorepo systems.
 - [Security Model](docs/security-model.md): actors, policies, projections, and publication checks.
 - [Architecture](docs/architecture.md): early component boundaries for the prototype.
 - [Roadmap](docs/roadmap.md): staged path from docs to local prototype to hosted collaboration.
