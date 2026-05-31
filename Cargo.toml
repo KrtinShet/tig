@@ -2,6 +2,13 @@
 name = "tig"
 version = "0.1.0"
 edition = "2021"
+description = "A work-first version control substrate for humans and AI coding agents — a Git alternative built around workspaces, snapshots, runs, and review units."
+license = "MIT"
+repository = "https://github.com/KrtinShet/tig"
+homepage = "https://github.com/KrtinShet/tig"
+readme = "README.md"
+keywords = ["version-control", "vcs", "git-alternative", "ai-agents", "snapshots"]
+categories = ["command-line-utilities", "development-tools"]
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
