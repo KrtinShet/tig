@@ -6,3 +6,16 @@ build/
 .env.*
 !.env.example
 
+
+
+# Added by cargo
+
+/target
+
+# Local tooling / agent config
+.omc/
+.claude/
+
+# Internal scratch / spec artifacts (not part of the public project)
+progress.txt
+prd.json
